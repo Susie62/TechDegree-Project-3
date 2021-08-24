@@ -21,7 +21,7 @@ h1 {
   font-size: 0.875em;
 	font-weight: 400;
   cursor: pointer;
-  color: red;
+  color: #fff;
   padding-left: 20px;
   padding-right: 20px;
 	width: 100%;
@@ -64,7 +64,7 @@ input[type="email"],
 input[type="password"],
 textarea {
 	font-size: 1em;
-  color: lightgray;
+  color: #222;
   font-weight: 300;
   width: 100%;
   height: auto;
