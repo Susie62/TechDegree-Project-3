@@ -3,7 +3,7 @@
 input:focus,
 textarea:focus {
   border-color: #52bab3;
-} 
+}
 
 input:disabled {
   background: #ddd;
