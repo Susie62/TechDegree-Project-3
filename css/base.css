@@ -4,7 +4,6 @@
 body {
 	font-family: 'Merriweather', sans-serif;
 	color: #384047;
-	padding: 40px 0 60px;
 }
 
 #review {
@@ -13,17 +12,15 @@ body {
 	font-weight: bolder;
 	color: white;
   text-align: center;
-	padding: 20px 0 20px;
+	padding: 20px;
 	width: 100%;
 	background-color: black;
-
 }
 
 h1 {
+	font-size: 1.5em;
 	font-weight: bolder;
-  margin: 0 0 30px 0;
-  text-align: left;
-	padding-top: 20px;
+  text-align: center;
 }
 
 h3 {
@@ -43,17 +40,16 @@ h3 {
 	margin: auto;
 }
 
-#name {
+#name, #email, #phone, #address, #city, #zip {
 	font-size: .75em;
 	font-style: italic;
 	text-align: right;
 	opacity: .50;
 }
 
-#email {
-	font-size: .75em;
-	font-style: italic;
-	text-align: right;
+#state {
+	font-size: 1em;
+	text-align: left;
 	opacity: .50;
 }
 
@@ -106,7 +102,10 @@ textarea  {
 }
 input[type="text"],
 input[type="email"],
-input[type="password"],
+input[type="phone"],
+input[type="address"],
+input[type="city"],
+input[type="state"],
 textarea {
 	font-size: 1em;
   color: #222;
@@ -124,7 +123,9 @@ input[type="checkbox"] + label {
 	font-size: .85em;
   display: inline;
 	padding-left: 5px;
+	margin: 5px;
 }
+
 
 /* Media Queries -------------------- */
 
