@@ -2,8 +2,9 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Merriweather', sans-serif;
-	color: #384047;
+	font-family: 'Lato', sans-serif;
+	display: block;
+	border: none;
 	margin: 0;
 }
 
@@ -23,21 +24,36 @@ h1 {
   text-align: center;
 }
 
-h3 {
+h2 {
+	padding-left: 15px;
+}
+
+h2, h3 {
 	font-size: 1.5em;
 	font-weight: bolder;
   margin: 0 0 30px 0;
   text-align: left;
 	padding-top: 20px;
 }
+
+fieldset {
+	border: none;
+}
 /* Main -------------------- */
-	hr.class-1 {
-		border-top: 10px double black;
+hr.class-1 {
+	border-top: 10px double black;
+	width: 100%;
 }
 
 #container {
 	width: 92%;
-	margin: auto;
+	margin: 0;
+}
+
+#summary-signup {
+	width: 100%;
+	text-align: center;
+	color: lightgray;
 }
 
 #name, #email, #phone, #address, #city, #zip {
@@ -58,15 +74,14 @@ hr.class-2 {
 }
 
 .btn {
-  font-size: 0.875em;
-	font-weight: 400;
+  font-size: 1.5em;
+	font-weight: 900;
   cursor: pointer;
   color: #fff;
   padding-left: 20px;
   padding-right: 20px;
 	width: 100%;
 	margin: .5em 0 1em;
-	text-transform: uppercase;
 }
 .btn:hover {
   opacity: .30;
@@ -81,7 +96,7 @@ hr.class-2 {
 /* Form -------------------- */
 
 .form-contact {
-  padding: 20px 24px;
+  padding: 0 24px;
   background: none;
 }
 label {
@@ -94,7 +109,7 @@ label:last-of-type {
 input,
 select,
 textarea  {
-  outline: 0;
+  outline: none;
 	border: none;
 	padding: 15px;
 	background: #f4f7f8;
@@ -106,6 +121,7 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: #52bab3;
+	outline: none;
 }
 
 input[type="text"],
@@ -153,8 +169,8 @@ footer {
 
 /* Media Queries -------------------- */
 
-@media form (min-width: 769px) {
-	form {
-		max-width: 550px;
+@media form (max-width: 768px) {
+	label {
+
 	}
 }
