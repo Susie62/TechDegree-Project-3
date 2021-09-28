@@ -12,9 +12,9 @@ body {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: bolder;
+	padding: 10px;
 	color: white;
   text-align: center;
-	padding: 20px;
 	background-color: black;
 }
 
@@ -31,27 +31,26 @@ h2 {
 h2, h3 {
 	font-size: 1.5em;
 	font-weight: bolder;
-  margin: 0 0 30px 0;
   text-align: left;
 	padding-top: 20px;
 }
-
 fieldset {
 	border: none;
 }
+
 /* Main -------------------- */
 hr.class-1 {
 	border-top: 10px double black;
-	width: 100%;
+	width: 92%;
 }
 
 #container {
-	width: 92%;
+	text-align: left;
 	margin: 0;
 }
 
 #summary-signup {
-	width: 100%;
+	width: 92%;
 	text-align: center;
 	color: lightgray;
 }
@@ -71,6 +70,7 @@ hr.class-1 {
 
 hr.class-2 {
 	border-top: 3px solid black;
+	width: 92%;
 }
 
 .btn {
@@ -96,7 +96,6 @@ hr.class-2 {
 /* Form -------------------- */
 
 .form-contact {
-  padding: 0 24px;
   background: none;
 }
 label {
@@ -169,8 +168,14 @@ footer {
 
 /* Media Queries -------------------- */
 
-@media form (max-width: 768px) {
-	label {
+@media (min-width: 768px)
 
-	}
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="city"],
+select[type="state"],
+textarea {
+	width: 80%;
 }
