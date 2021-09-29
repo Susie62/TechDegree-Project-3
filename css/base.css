@@ -42,6 +42,7 @@ fieldset {
 hr.class-1 {
 	border-top: 10px double black;
 	width: 92%;
+	margin-top: 3em;
 }
 
 #container {
@@ -70,7 +71,8 @@ hr.class-1 {
 
 hr.class-2 {
 	border-top: 3px solid black;
-	width: 92%;
+	width: 100%;
+	margin-top: 3em;
 }
 
 .btn {
@@ -168,14 +170,22 @@ footer {
 
 /* Media Queries -------------------- */
 
-@media (min-width: 768px)
+@media (min-width: 768px) {
 
-input[type="text"],
-input[type="email"],
-input[type="phone"],
-input[type="address"],
-input[type="city"],
-select[type="state"],
-textarea {
-	width: 80%;
+ 	#container {
+		margin: auto 20%;
+		}
+	.contact label {
+		float: left;
+		width: 20%;
+		display: inline-block;
+	}
+	.contact input {
+		display: block;
+		width: 80%;
+	}
+	.contact select {
+		display: block;
+		width: 80%;
+	}
 }
