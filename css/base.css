@@ -63,9 +63,10 @@ hr.class-1 {
 	font-style: italic;
 	text-align: right;
 	opacity: .50;
+	width: 100%;
 }
 
-#state, #phone {
+#state {
 	font-size: .75em;
 	font-style: italic;
 	text-align: left;
@@ -174,4 +175,10 @@ footer {
 
 /* Media Queries -------------------- */
 
-@media (min-width: 768px)
+@media (min-width: 768px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
