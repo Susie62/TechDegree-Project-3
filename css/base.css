@@ -18,21 +18,23 @@ body {
 	background-color: black;
 }
 
+.contact {
+	padding-top: 10px;
+}
+
 h1 {
 	font-size: 1.5em;
 	font-weight: bolder;
   text-align: center;
 }
 
-h2 {
-	padding-left: 15px;
-}
-
-h2, h3 {
+legend, h2 {
 	font-size: 1.5em;
 	font-weight: bolder;
   text-align: left;
+	display: inline-block;
 	padding-top: .5px;
+	padding-bottom: 10px;
 }
 fieldset {
 	border: none;
@@ -63,16 +65,16 @@ hr.class-1 {
 	opacity: .50;
 }
 
-
-#state {
+#state, #phone {
 	font-size: .75em;
 	font-style: italic;
 	text-align: left;
 	opacity: .50;
 	width: 100%;
-
 }
-
+#zip {
+	width: 50%;
+}
 
 hr.class-2 {
 	border-top: 3px solid black;
@@ -107,7 +109,7 @@ hr.class-2 {
 }
 
 label {
-  display: inline-block;
+  display: block;
   margin-bottom: 0.8em;
 }
 
@@ -135,19 +137,18 @@ textarea:focus {
 input[type="text"],
 input[type="email"],
 textarea {
-	font-size: 1em;
+	font-size: 18px;
   color: #222;
   font-weight: 300;
   width: 100%;
   height: auto;
-  margin-bottom: 1.2em;
   box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
 }
 form > a {
   font-size: .85em;
 }
 input[type="checkbox"] + label {
-  font-weight: 300 bold;
+  font-weight: 300;
 	font-size: .85em;
   display: inline;
 	padding-left: 5px;
@@ -173,6 +174,4 @@ footer {
 
 /* Media Queries -------------------- */
 
-@media (min-width: 768px) {
-
- 	
+@media (min-width: 768px)
