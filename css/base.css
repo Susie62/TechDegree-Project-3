@@ -32,7 +32,7 @@ h2, h3 {
 	font-size: 1.5em;
 	font-weight: bolder;
   text-align: left;
-	padding-top: 20px;
+	padding-top: .5px;
 }
 fieldset {
 	border: none;
@@ -42,7 +42,7 @@ fieldset {
 hr.class-1 {
 	border-top: 10px double black;
 	width: 92%;
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 #container {
@@ -63,16 +63,21 @@ hr.class-1 {
 	opacity: .50;
 }
 
+
 #state {
-	font-size: 1em;
+	font-size: .75em;
+	font-style: italic;
 	text-align: left;
 	opacity: .50;
+	width: 100%;
+
 }
+
 
 hr.class-2 {
 	border-top: 3px solid black;
 	width: 100%;
-	margin-top: 3em;
+	margin-top: 1em;
 }
 
 .btn {
@@ -100,15 +105,18 @@ hr.class-2 {
 .form-contact {
   background: none;
 }
+
 label {
-  display: block;
-  margin-bottom: 0.5em;
+  display: inline-block;
+  margin-bottom: 0.8em;
 }
+
 label:last-of-type {
- margin-top: 1.1em;
+ text-align: left;
+ margin-top: 2em;
 }
+
 input,
-select,
 textarea  {
   outline: none;
 	border: none;
@@ -119,7 +127,6 @@ textarea  {
 }
 
 input:focus,
-select:focus,
 textarea:focus {
   border-color: #52bab3;
 	outline: none;
@@ -127,10 +134,6 @@ textarea:focus {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
-input[type="address"],
-input[type="city"],
-select[type="state"],
 textarea {
 	font-size: 1em;
   color: #222;
@@ -172,20 +175,4 @@ footer {
 
 @media (min-width: 768px) {
 
- 	#container {
-		margin: auto 20%;
-		}
-	.contact label {
-		float: left;
-		width: 20%;
-		display: inline-block;
-	}
-	.contact input {
-		display: block;
-		width: 80%;
-	}
-	.contact select {
-		display: block;
-		width: 80%;
-	}
-}
+ 	
