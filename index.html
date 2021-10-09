@@ -14,6 +14,7 @@
 			</div>
 		</header>
 
+<div id="main-container">
 	<div id="container">
 		<h1>Sign up for our newsletter</h1>
 		<div id="summary-signup">
@@ -30,29 +31,40 @@
 		<fieldset>
 			<legend>Contact Information</legend>
 
-	<div class="choices">
-
-		  <label for="name">Full Name</label>
+	<div class="choice">
+			<label for="name">Full Name</label>
 		  <input type="text" id="name" name="user-name" placeholder="Required">
+	</div>
 
+	<div class="choice">
      	<label for="email">Email Address</label>
      	<input type="email" id="email" name="user-email" placeholder="Required">
+	</div>
 
+	<div class="choice">
 			<label for="phone">Phone Number</label>
 		  <input type="tel" id="phone" name="user-phone">
+	</div>
 
+	<div class="choice">
 			<label for="address">Street Address</label>
-		  <input type="text" id="address" name="uszer-address">
+		  <input type="text" id="address" name="user-address">
+	</div>
 
+	<div class="choice">
 			<label for="city">City</label>
 		  <input type="text" id="city" name="user-city">
+	</div>
 
+	<div class="choice">
 			<label for="state">State</label>
 			<input type="text" id="state" name="user-state" placeholder="Choose state">
+	</div>
 
+	<div class="choice">
 			<label for="zip">Zip Code</label>
 			<input type="text" id="zip" name="user-zip">
-
+			<div id="zipcode"></div>
 	</div>
 
 			<hr class="class-2" />
@@ -75,9 +87,13 @@
 
 			<input type="radio" id="HTML" name="user_interest"><label for="HTML">HTML</label><br>
 			<input type="radio" id="text" name="user_interest"><label for="text">Plain text</label><br>
+			<br />
 
+		<div id="topics">
      	<label for="other-topics">Other topics you'd like to hear about</label>
+			<br>
  			<textarea id="other-topics" name="user-other-topics" rows="4"></textarea>
+		</div>
 
 		  <input class="btn default" type="submit" value="Sign Up">
 		</fieldset>

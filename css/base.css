@@ -54,22 +54,46 @@ hr.class-1 {
 	color: lightgray;
 }
 
-#name, #email, #phone, #address, #city, #zip {
+.choice {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#name, #email, #phone, #address, #city, #zip, #state {
+	width: 100%;
+	font-size: 1em;
+}
+
+#name::placeholder {
+	position: sticky;
 	font-size: .75em;
 	font-style: italic;
 	text-align: right;
 	opacity: .50;
-	width: 100%;
 }
 
-#state {
+#email::placeholder {
+	position: sticky;
+	font-size: .75em;
+	font-style: italic;
+	text-align: right;
+	opacity: .50;
+}
+
+#state::placeholder {
+	position: absolute;
 	font-size: .75em;
 	font-style: italic;
 	text-align: left;
 	opacity: .50;
-	width: 100%;
 }
+
 #zip {
+	width: 50%;
+	display: block;
+}
+
+#zipcode {
 	width: 50%;
 }
 
@@ -110,12 +134,8 @@ label {
   margin-bottom: 0.8em;
 }
 
-label:last-of-type {
- text-align: left;
- margin-top: 2em;
-}
-
 input,
+select,
 textarea  {
   outline: none;
 	border: none;
@@ -126,6 +146,7 @@ textarea  {
 }
 
 input:focus,
+select:focus,
 textarea:focus {
   border-color: #52bab3;
 	outline: none;
@@ -158,6 +179,7 @@ input[type="radio"] + label {
   display: inline;
 	padding-left: 5px;
 	margin: 5px;
+	padding-bottom: 20px;
 }
 
 footer {
@@ -173,11 +195,30 @@ footer {
 
 @media (min-width: 768px) {
 
-	body {
+	#main-container {
 		display: flex;
 		flex-direction: column;
 		width: 60%;
 		position: inherit;
 		margin-left: 20%;
+	}
+
+	hr.class-1 {
+		width: 95%;
+	}
+
+	.choice {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	label	{
+		margin-bottom: 0;
+		width: 200px;
+	}
+
+	#topics {
+		white-space: nowrap;
 	}
 }
