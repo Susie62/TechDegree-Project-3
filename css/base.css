@@ -204,6 +204,7 @@ footer {
 	}
 
 	hr.class-1 {
+		display: flex;
 		width: 95%;
 	}
 
@@ -214,6 +215,7 @@ footer {
 	}
 
 	label	{
+		display: flex;
 		margin-bottom: 0;
 		width: 200px;
 	}
