@@ -45,6 +45,7 @@ hr.class-1 {
 
 #container {
 	text-align: left;
+	width: 100%;
 	margin: 0;
 }
 
@@ -80,12 +81,11 @@ hr.class-1 {
 	opacity: .50;
 }
 
-#state::placeholder {
-	position: absolute;
-	font-size: .75em;
+option:first-of-type {
+	font-size: .50em;
 	font-style: italic;
 	text-align: left;
-	opacity: .50;
+	color: #9e9e9e;
 }
 
 #zip {
@@ -217,6 +217,16 @@ footer {
 		margin-bottom: 0;
 		width: 200px;
 	}
+
+	#zip {
+		display: flex;
+		width: 25%;
+}
+
+#zipcode {
+	display: flex;
+	width: 75%;
+}
 
 	#topics {
 		white-space: nowrap;
